@@ -87,6 +87,42 @@ This will generate various plots like feature importance, model performance, and
 2. **Modeling.ipynb**: Train and evaluate models using the processed data.
 3. **Results.ipynb**: Visualize the model's results and evaluation metrics.
 
+
+To use this project, you need to download the dataset from Kaggle. Follow the steps below to download the dataset using the `kagglehub` Python library.
+
+### Prerequisites
+
+Make sure you have `kagglehub` installed. If not, you can install it by running:
+
+```
+pip install kagglehub
+Downloading the Dataset
+Once you have the required library installed, you can use the following Python script to download the dataset:
+
+python
+Copy
+Edit
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("asaniczka/tmdb-movies-dataset-2023-930k-movies")
+
+print("Path to dataset files:", path)
+This script will download the dataset and provide the path to where the files are stored on your local machine.
+```
+
+Notes
+
+Make sure to replace asaniczka/tmdb-movies-dataset-2023-930k-movies with the correct dataset identifier if using a different dataset.
+The dataset will be saved in the specified location, and you can use it for your machine learning tasks.
+After downloading, make sure to load the data in the appropriate format for use in the project.
+
+css
+Copy
+Edit
+
+This provides both the steps to install the necessary library and the script to download the dataset.
+
 ## Contributing
 
 Feel free to fork the repository and submit pull requests with improvements, bug fixes, or new features. Ensure you write tests and update documentation as needed.
