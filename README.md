@@ -99,9 +99,6 @@ pip install kagglehub
 Downloading the Dataset
 Once you have the required library installed, you can use the following Python script to download the dataset:
 
-python
-Copy
-Edit
 import kagglehub
 
 # Download latest version
